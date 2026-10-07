@@ -11,6 +11,11 @@
     color: $colorBotonTexto;
     display: block;
     margin: 1rem auto;
+    padding: 5px;
+
+    &:hover{
+        transform: $botonTransform;
+    }
 }
 
 %bloqueGaleria {

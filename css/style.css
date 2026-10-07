@@ -9,6 +9,10 @@
   color: #00D9FF;
   display: block;
   margin: 1rem auto;
+  padding: 5px;
+}
+.girasCompra button:hover, .bloqueFormContacto form button:hover {
+  transform: scale(1.09) translateY(-2px);
 }
 
 .bloqueGaleria, .bloqueVideo, .bloqueConciertos, .bloqueFotografia {
@@ -111,10 +115,12 @@ header .nav-link {
   color: #00D9FF;
   font-size: 25px;
   padding: 8px;
+  transition: all 0.5s;
 }
 header .nav-link:hover {
   color: #66E8FF;
   text-decoration: underline;
+  transform: scale(0.92) translateY(-2px);
 }
 header .navbar .nav-link.active {
   color: #00D9FF;
