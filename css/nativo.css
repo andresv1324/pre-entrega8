@@ -1,0 +1,744 @@
+/* Google Fonts*/
+    /* Poppins | Uso En Titulos */
+    /* font-family: "Poppins", sans-serif; */
+    /* font-weight: 400; */
+    /* font-style: normal; */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+    /* Inter @ Uso Para Textox */
+    /* font-family: "Inter", sans-serif; */
+    /* font-weight: 400; */
+    /* font-style: normal */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* Generales */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    background-color: #0B1020;
+    color: #FFFFFF;
+}
+
+/* Contenidos */
+section {
+    background-color: #172554;
+    padding: 20px;
+}
+
+article {
+    background-color: #1E3A5F;
+    padding: 20px;
+}
+
+/* TiTULOS */
+h1, h2, h3 {
+    font-family: "Poppins", sans-serif;
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+h2 {
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-weight: 500;
+    font-size: 1.25rem;
+}
+
+p {
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+figcaption {
+    font-weight: 200;
+}
+
+/* ENLACES */
+a {
+    text-decoration: none;
+    color: #00D9FF;
+}
+
+/* Elementos */
+iframe {
+    width: 400px;
+    height: 200px;
+}
+
+button {
+    background-color: #00D9FF;
+    color: #0B1020;
+}
+
+/* ==================================================== */
+/* Estilo Navbar */
+
+.navbar-collapse{
+    justify-content: flex-end;
+}
+
+.navbar-brand{
+    font-size: 25px;
+    color: #00D9FF; 
+}
+
+.navbar-brand:hover{
+    color: #66E8FF;
+}
+
+.nav-link{
+    color: #00D9FF;
+    font-size: 25px;
+    padding: 8px;
+}
+
+.navbar .nav-link:hover {
+    color: #66E8FF ;
+    text-decoration: underline;
+}
+
+.navbar .nav-link.active {
+    color: #00D9FF;
+    background-color: #102A3A;
+    border: 1px solid #00D9FF;
+    border-radius: 50px;
+    padding: 8px 15px;
+}
+
+.navbar-toggler{
+    border-color: #00D9FF;
+}
+
+.menu-icon {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.menu-icon span {
+    width: 20px;
+    height: 2px;
+    background-color: #00D9FF;
+    display: block;
+}
+
+header nav div a{
+    color: #00D9FF;}
+
+header nav a{
+    font-size: 25px;
+}
+
+header nav ul{
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+/* ==================================================== */
+
+/* Estilos Footer */
+footer{
+    padding: 1rem;
+    display: flex;
+    background-color: #0B1020;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer section{
+    background-color: #0B1020;
+}
+
+footer .redes{
+    display: flex;
+}
+
+footer section nav{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 4rem;
+    align-items: center;
+}
+
+.redes nav a{
+    width: 2rem;
+}
+
+/* ESTILOS INDEX */
+
+/* Accordion */
+
+#accordionTrayectoria .accordion-item {
+    background-color: #1E3A5F;
+    border: 1px solid #00D9FF;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+#accordionTrayectoria .accordion-button {
+    background-color: #1E3A5F;
+    color: #00D9FF;
+    border: none;
+    box-shadow: none;
+    transition: all 2s ease;
+}
+
+
+#accordionTrayectoria .accordion-button:not(.collapsed) {
+    background-color: #1E3A5F;
+    color: #00D9FF;
+    box-shadow: none;
+}
+
+#accordionTrayectoria .accordion-body {
+    background-color: #1E3A5F;
+    color: white;
+    border-top: 1px solid #00D9FF;
+}
+
+#accordionTrayectoria .accordion-button:focus {
+    background-color: #263F70;
+    color: #66E8FF;
+    border: 1px solid #00D9FF;
+    box-shadow: 0 0 0 3px rgba(0, 217, 255, 0.25);
+}
+
+
+.indexCard {
+    background-color: #1E3A5F;
+    color: white;
+    border: 1px solid #00D9FF;
+}
+
+.indexCard .card-title {
+    color: #00D9FF;
+}
+
+.indexCard .card-text {
+    color: white;
+}
+
+.indexImgAlan {
+    display: none;
+}
+
+.indexLista {
+    list-style: none;
+}
+
+.indexBioInicio {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "indexT"
+        "indexB1"
+        "indexB2";
+    gap: 1rem;
+}
+
+/* ESTILOS GIRAS */
+.listaGiras {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.listaGiras article {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    justify-items: center;
+}
+
+iframe{
+    display: none;
+}
+
+
+/* ==================================================== */
+/* Estilos Para Galeria */
+    .mainGaleria{
+        background-color: #172554;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        padding: 8px;
+    }
+
+    .mainGaleria .galeriaCarrusel{
+
+        background-color: #1E3A5F;
+    }
+
+    .bloqueFotografia{
+        background-color: #263F70;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bloqueGaleria, .bloqueVideo, .bloqueConciertos{
+        background-color: #263F70;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .galeriaCarrusel {
+        width: 70%;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .galeriaIframe{
+        display:block;
+    }
+
+    .carousel-caption {
+        display: none;
+    }
+    .carruselFoto3,.carruselFoto4,.bloqueConciertos{
+        display: none;
+    }
+/* ==================================================== */
+
+
+/* ==================================================== */
+/* Estilos Para Contacto */
+    .mainContacto{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 1fr 1.5fr 5fr;
+        grid-template-areas: 
+            "bloqTitCon"
+            "bloqCorCon"
+            "bloqForCot";
+    }
+
+    /* ETIQUETADO y ESTILOS*/
+    .bloqueTituloContacto{
+        grid-area: bloqTitCon;
+    }
+
+    .bloqueCorreoContacto{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        grid-area: bloqCorCon;
+    }
+
+    .bloqueFormContacto{
+        display: flex;
+        flex-direction: column;
+        grid-area: bloqForCot;
+    }
+
+    .bloqueFormContacto form{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bloqueFormContacto form label{
+        padding-top: 1.5rem;
+    }
+
+    .bloqueFormContacto form textarea{
+        width: 100%;
+        height: 8rem;
+        resize: none;
+    }
+
+    .bloqueFormContacto form button{
+        background-color: #1E3A5F;
+        border: 1px solid #00D9FF;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        color: #00D9FF;
+        width: 30%;
+        display: block;
+        margin: 1rem auto;
+    }
+    .BloqueInformacionContacto{
+        display: none;
+    }
+/* ==================================================== */
+
+
+@media (min-width: 768px){
+/* ==================================================== */
+/* Estilos Para Contacto */
+    .mainContacto{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1.5fr 5fr;
+        grid-template-areas: 
+            "bloqTitCon bloqTitCon"
+            "bloqCorCon  bloqForCot"
+            "bloqInfCon bloqForCot";
+    }
+
+    /* ETIQUETADO y ESTILOS*/
+    .BloqueInformacionContacto{
+        display: block;
+        grid-area: bloqInfCon;
+    }
+/* ==================================================== */
+
+/* ==================================================== */
+/* Estilos Para Galeria */
+    .bloqueFotografia{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 1fr 5fr;
+        grid-template-areas: 
+            "tituloF tituloF"
+            "carr1F carr2F";
+    }
+
+    .bloqueVideo{
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-rows: 1fr 5fr;
+        grid-template-areas: 
+            "tituloV tituloV"
+            "carr1V carr2V";
+    }
+
+    /* ============================== */
+    /* ETIQUETA PARTE FOTOS  */
+    .bloqueFotografia h2{
+        justify-self: center;
+        grid-area: tituloF;
+    }
+
+    .carruselFoto1{
+        grid-area: carr1F;
+    }
+
+    .carruselFoto2{
+        grid-area: carr2F;
+    }
+
+    /* ============================== */
+    /* ETIQUETA PARTE VIDEOS */
+    .bloqueVideo h2{
+        justify-self: center;
+        grid-area: tituloV;
+    }
+
+    .carruselVideo1{
+        grid-area: carr1V;
+    }
+
+    .carruselVideo2{
+        grid-area: carr2V;
+    }
+
+    .carousel-caption {
+        display: none;
+    }
+
+
+
+/* ==================================================== */
+
+
+/* Estilos Giras */
+    /* Etiquetado Zonas */
+    .girasFecha{
+        grid-area: girasF;
+    }
+    .girasPais{
+        grid-area: girasP;
+        grid-column: 2;
+        grid-row: 1 / 3;
+        align-self: center;
+    }
+    .girasZona{
+        grid-area: girasZ;
+    }
+    .girasCompra{
+        grid-area: girasC;
+        grid-column: 3;
+        grid-row: 1 / 3;
+        align-self: center;
+    }
+
+
+    .listaGiras article{
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        grid-template-columns: 1fr 3fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+            "girasF girasP girasC"
+            "girasZ .      .";
+    }
+
+
+
+/* ESTILOS INDEX */
+    /* ETIQUETADO */
+    .indexTitulo{
+        grid-area: indexT;
+    }
+    .indexBioTexto1{
+        grid-area: indexB1;
+    }
+    .indexBioTexto2{
+        grid-area: indexB2;
+    }
+
+
+
+    .indexBioInicio{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 1fr 3fr;
+        grid-template-areas: 
+            "indexT indexT"
+            "indexB1 indexB2";
+        gap: 1rem;
+    }
+
+    .trayectoriaIndex{
+        gap: 1rem;
+        display: flex;
+    }
+
+    .indexLista{
+        list-style: initial;
+    }
+    
+    .bloqueTrayectoriaIndex{
+        display: none;
+    }
+}
+
+
+
+@media (min-width: 1024px){
+/* ==================================================== */
+/* Estilos Para Contacto */
+    .mainContacto{
+        background-color: #172554;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: 1fr 1.5fr 5fr;
+        grid-template-areas: 
+            "bloqTitCon bloqTitCon bloqTitCon bloqTitCon"
+            "bloqCorCon bloqCorCon bloqForCot bloqForCot"
+            "bloqInfCon bloqInfCon bloqForCot bloqForCot ";
+    }
+
+    /* ETIQUETADO y ESTILOS*/
+
+    .bloqueCorreoContacto,.BloqueInformacionContacto{
+        width: 50%;
+        justify-self: center;
+    }
+
+    .bloqueFormContacto{
+        width: 70%;
+    }
+/* ==================================================== */
+
+/* ==================================================== */
+/* Estilos Para Galeria */
+    .carruselFoto3, .carruselFoto4,.bloqueConciertos{
+        display: block;
+    }
+
+
+    .mainGaleria{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: 1fr 6fr 6fr;
+        grid-template-areas: 
+            "tituloG . . ."
+            "bloqFo bloqFo bloqFo bloqFo"
+            "bloqVi bloqVi bloqCo bloqCo";
+    }
+
+    .bloqueConciertos{
+        display: grid;
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        grid-template-rows: 1fr 3fr 3fr;
+        grid-template-areas: 
+            "tituloG2"
+            "concierto"
+            "concierto";
+    }
+
+    .bloqueConciertos h2{
+        justify-self: center;
+        grid-area: tituloG2;
+    }
+    .bloqueConciertos section{
+        grid-area: concierto;
+    }
+
+    .bloqueFotografia{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: 1fr 5fr;
+        grid-template-areas: 
+            "tituloF tituloF tituloF"
+            "carr1F carr2F carr3F";
+    }
+
+    .bloqueVideo{
+        display: grid;
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        grid-template-rows: 1fr 3fr 3fr;
+        grid-template-areas: 
+            "tituloV"
+            "carr1V"
+            "carr2V";
+    }
+
+    /* ETIQUETADO */
+    .carruselFoto3{
+        grid-area: carr3F;
+    }
+
+    .tituloGaleria{
+        grid-area: tituloG;
+    }
+
+    .bloqueFotografia{
+        grid-area: bloqFo;
+    }
+    .bloqueVideo{
+        grid-area: bloqVi;
+    }
+    .bloqueConciertos{
+        grid-area: bloqCo;
+    }
+
+/* ==================================================== */
+
+/* ESTILOS INDEX */
+.mainIndex{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+    .trayectoriaIndex{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto 1fr;
+        grid-template-areas: 
+            "bloTraInd bloTraInd"
+            "bloqHabInd bloImgInd";
+    }
+
+    .bloqueTrayectoriaIndex{
+        grid-area: bloTraInd;
+    }
+
+    .bloqueHabilidadesIndex{
+        grid-area: bloqHabInd;
+    }
+
+    .indexImgAlan{
+        grid-area: bloImgInd;
+    }
+
+
+    .bloqueTrayectoriaIndex{
+        display: block;
+    }
+
+
+
+
+
+.bloqueHabilidadesIndex{
+    display: block;
+}
+
+.indexBioInicio{
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 1fr 1fr 2fr;
+    grid-template-areas: 
+        "indexT indexT"
+        "indexB1 indexB1"
+        "indexB2 indexB2";
+    gap: 1rem;
+}
+
+.indexImgAlan{
+    display: block;
+}
+.trayectoriaIndex{
+    gap: 0;
+}
+
+/* Estilos Flex | Model-box Album */
+    .mainAlbum{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .destacadaAlbum{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .destacadaAlbum div{
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        padding: .5rem;
+    }
+
+    .destacadaAlbum div article{
+        flex: 1;
+    }
+
+    .destacadaAlbum div article p{
+        padding: 20px;
+    }
+
+/* ESTILOS ALBUM */
+    .girasMap{
+        grid-area: girasM;
+    }
+
+    .listaGiras article{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+            "girasF girasM ."
+            "girasP girasM ."
+            "girasZ girasM girasC";
+    }
+
+    iframe{
+        display: block;
+        height: 120px;
+        padding: 1rem;
+    }
+
+}
