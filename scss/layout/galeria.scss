@@ -24,6 +24,12 @@
     @extend %bloqueGaleria;
 }
 
+.carousel-item{
+    &:hover{
+        transform: scale(1.2);
+    }
+}
+
 .galeriaCarrusel {
     width: 70%;
     max-width: 500px;

@@ -435,6 +435,10 @@ header .menu-icon span {
   background-color: #1E3A5F;
 }
 
+.carousel-item:hover {
+  transform: scale(1.2);
+}
+
 .galeriaCarrusel {
   width: 70%;
   max-width: 500px;
