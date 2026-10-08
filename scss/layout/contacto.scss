@@ -61,13 +61,44 @@
 }
 
 .bloqueFormContacto {
+    background: linear-gradient(145deg,rgba(23, 37, 84, 0.95),rgba(30, 58, 95, 0.9));
+
+    border: 1px solid $colorHeaderMenuBorde;
+    border-radius: 12px;
+    padding: 2rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+
     form {
+        gap: 0.5rem;
+
+        input,
+        textarea {
+            background-color: rgba(11, 16, 32, 0.8);
+            border: 1px solid #263F70;
+            border-radius: 6px;
+            padding: 0.8rem;
+            color: white;
+            outline: none;
+        }
+
+        input:focus,
+        textarea:focus {
+            border-color: #00D9FF;
+            box-shadow: 0 0 8px rgba(0, 217, 255, 0.3);
+        }
+
         button {
             @extend %botonEstilo;
             width: 30%;
+            margin-top: 1rem;
+            align-self: center;
         }
     }
 }
+
+
+
 
 /* ============================= */
 /* CONTACTO - TABLET */
